@@ -1,2 +1,14 @@
 === GitHub backup started at Wed Dec 18 06:56:04 UTC 2024 ===
 Checking for changes to commit...
+[master 807dd86] Daily GitHub backup: 2024-12-18_06-56-04
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ mode change 100644 => 100755 config/backups/github/ivanka_backup.sh
+Pushing changes to GitHub...
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/eastern-brown/ivanka.git/'
+Changes committed and pushed successfully
+=== GitHub backup completed at Wed Dec 18 06:56:54 UTC 2024 ===
+----------------------------------------
+=== GitHub backup started at Wed Dec 18 07:02:55 UTC 2024 ===
+Checking for changes to commit...
