@@ -3,19 +3,19 @@
 ## Overview
 Ivanka uses a comprehensive three-layer backup system:
 
-1. **Full System Backups** (`/home/ernsttulle/backups/agatha/`)
+1. **Full System Backups** (`/home/ernsttulle/backups/peggy/`)
 - Daily snapshots using master_backup.sh 
 - Full .tar.gz of entire bot
 - Retains last 5 backups
 - Part of multi-bot backup system
 
-2. **GitHub Backups** (`/home/ernsttulle/agatha/backups/github/`)
+2. **GitHub Backups** (`/home/ernsttulle/peggy/backups/github/`)
 - Daily code version control
 - Runs at 3:00 UTC
-- Pushes to eastern-brown/agatha repository
+- Pushes to eastern-brown/peggy repository
 - Tracks all code changes
 
-3. **Claude Session Backups** (`/home/ernsttulle/agatha/backups/claude_sessions/`)
+3. **Claude Session Backups** (`/home/ernsttulle/peggy/backups/claude_sessions/`)
 - Snapshot system for AI work
 - On-demand backups before AI changes
 - Quick recovery from unwanted changes
@@ -23,10 +23,10 @@ Ivanka uses a comprehensive three-layer backup system:
 
 ## Directory Structure
 ```
-/home/ernsttulle/agatha/
+/home/ernsttulle/peggy/
 └── backups/
     ├── github/
-    │   ├── agatha_backup.sh      # GitHub backup script
+    │   ├── peggy_backup.sh      # GitHub backup script
     │   └── github_backup_log.txt # GitHub operation logs
     ├── claude_sessions/
     │   ├── claude_tracker.py    # Core session tracking
@@ -39,11 +39,11 @@ Ivanka uses a comprehensive three-layer backup system:
 ## System Components
 
 ### 1. Full System Backups
-Location: `/home/ernsttulle/backups/agatha/`
+Location: `/home/ernsttulle/backups/peggy/`
 Script: `/home/ernsttulle/master_backup.sh`
 ```bash
 # Format of backup files:
-agatha_backup_YYYYMMDD_HHMMSS.tar.gz
+peggy_backup_YYYYMMDD_HHMMSS.tar.gz
 
 # Schedule:
 - Daily at 15:00 UTC
@@ -52,11 +52,11 @@ agatha_backup_YYYYMMDD_HHMMSS.tar.gz
 ```
 
 ### 2. GitHub Backup System
-Location: `/home/ernsttulle/agatha/backups/github/`
+Location: `/home/ernsttulle/peggy/backups/github/`
 ```bash
 # Start manual GitHub backup:
-cd /home/ernsttulle/agatha
-./backups/github/agatha_backup.sh
+cd /home/ernsttulle/peggy
+./backups/github/peggy_backup.sh
 
 # Schedule:
 - Daily at 03:00 UTC
@@ -67,7 +67,7 @@ tail -f backups/github/github_backup_log.txt
 ```
 
 ### 3. Claude Session System
-Location: `/home/ernsttulle/agatha/backups/claude_sessions/`
+Location: `/home/ernsttulle/peggy/backups/claude_sessions/`
 ```bash
 # Start new session:
 python3 backups/claude_sessions/claude_session.py start "Description"
@@ -86,7 +86,7 @@ python3 backups/claude_sessions/claude_session.py restore session_ID
 2. GitHub backup runs automatically at 03:00 UTC
 3. Create Claude session before AI work:
    ```bash
-   cd /home/ernsttulle/agatha
+   cd /home/ernsttulle/peggy
    python3 backups/claude_sessions/claude_session.py start "Task description"
    ```
 
@@ -113,7 +113,7 @@ git checkout <commit-hash>
 #### Full System Recovery
 ```bash
 cd /home/ernsttulle
-tar -xzf /home/ernsttulle/backups/agatha/agatha_backup_TIMESTAMP.tar.gz
+tar -xzf /home/ernsttulle/backups/peggy/peggy_backup_TIMESTAMP.tar.gz
 ```
 
 ## Maintenance
@@ -125,7 +125,7 @@ tar -xzf /home/ernsttulle/backups/agatha/agatha_backup_TIMESTAMP.tar.gz
   ```
 - Verify system backup:
   ```bash
-  ls -l /home/ernsttulle/backups/agatha/
+  ls -l /home/ernsttulle/backups/peggy/
   ```
 
 ### Weekly Tasks
@@ -171,7 +171,7 @@ tar -xzf /home/ernsttulle/backups/agatha/agatha_backup_TIMESTAMP.tar.gz
 
 ### GitHub Backup Task
 ```
-Command: /home/ernsttulle/agatha/backups/github/agatha_backup.sh
+Command: /home/ernsttulle/peggy/backups/github/peggy_backup.sh
 Time: 03:00 UTC
 Frequency: Daily
 ```
