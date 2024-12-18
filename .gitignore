@@ -1,0 +1,30 @@
+# Virtual Environment
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Redis
+redis/
+*.rdb
+dump.rdb
+
+# Backup files
+backups/*/sessions/
+backups/local/data_backups/
+
+# Environment variables and keys
+.env
+*.key
+*.json
+*_key.json
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
