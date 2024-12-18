@@ -25,7 +25,7 @@ Checking for changes to commit...
 [master 9b6a630] Daily GitHub backup: 2024-12-18_12-20-24
  16 files changed, 472 insertions(+), 42 deletions(-)
  delete mode 100644 .env.template
- rename config/backups/{ivanka_backup_system_documentation.md => agatha_backup_system_documentation.md} (78%)
+ rename config/backups/{ivanka_backup_system_documentation.md => maria_backup_system_documentation.md} (78%)
  rewrite config/backups/claude_sessions/claude_session.py (100%)
  mode change 100644 => 100755
  mode change 100644 => 100755 config/backups/claude_sessions/claude_tracker.py
@@ -38,12 +38,49 @@ Checking for changes to commit...
  create mode 100644 config/backups/claude_sessions/sessions/session_20241218_072527/README.md
  create mode 100755 config/backups/claude_sessions/sessions/session_20241218_072527/app.py
  create mode 100644 config/backups/claude_sessions/sessions/session_20241218_072527/requirements.txt
- rename config/backups/github/{ivanka_backup.sh => agatha_backup.sh} (84%)
+ rename config/backups/github/{ivanka_backup.sh => maria_backup.sh} (84%)
 Pushing changes to GitHub...
-To https://github.com/eastern-brown/agatha.git
+To https://github.com/eastern-brown/maria.git
    a3662f3..9b6a630  master -> master
 Changes committed and pushed successfully
 === GitHub backup completed at Wed Dec 18 12:20:25 UTC 2024 ===
 ----------------------------------------
 === GitHub backup started at Wed Dec 18 13:19:53 UTC 2024 ===
 Checking for changes to commit...
+[master bcb2bf9] Daily GitHub backup: 2024-12-18_13-19-53
+ 30 files changed, 47 insertions(+), 143 deletions(-)
+ delete mode 100755 config/backups/claude_sessions/sessions/session_20241218_072146/app.py
+ delete mode 100755 config/backups/claude_sessions/sessions/session_20241218_072358/app.py
+ delete mode 100644 config/backups/claude_sessions/sessions/session_20241218_072527/README.md
+ delete mode 100755 config/backups/claude_sessions/sessions/session_20241218_072527/app.py
+ delete mode 100644 config/backups/claude_sessions/sessions/session_20241218_072527/requirements.txt
+ rename config/backups/claude_sessions/sessions/{session_20241218_072146 => session_20241218_122351}/README.md (100%)
+ create mode 100755 config/backups/claude_sessions/sessions/session_20241218_122351/app.py
+ rename config/backups/claude_sessions/sessions/{session_20241218_072146 => session_20241218_122351}/requirements.txt (100%)
+ rename config/backups/claude_sessions/sessions/{session_20241218_072358 => session_20241218_122650}/README.md (100%)
+ create mode 100755 config/backups/claude_sessions/sessions/session_20241218_122650/app.py
+ rename config/backups/claude_sessions/sessions/{session_20241218_072358 => session_20241218_122650}/requirements.txt (100%)
+ rename config/backups/github/{maria_backup.sh => maria_backup.sh} (84%)
+ rename config/backups/{maria_backup_system_documentation.md => maria_backup_system_documentation.md} (77%)
+ delete mode 100755 config/tasks/handlers/analyze_data_handler.py
+ delete mode 100755 config/tasks/handlers/clean_data_handler.py
+ delete mode 100755 config/tasks/handlers/generate_report_handler.py
+ delete mode 100755 config/tasks/handlers/get_data_handler.py
+ delete mode 100755 config/tasks/handlers/review_data_handler.py
+ delete mode 100755 config/tasks/handlers/upload_data_handler.py
+ delete mode 100755 config/tasks/processors/call_data_processor.py
+ delete mode 100755 config/tasks/processors/metrics_processor.py
+ delete mode 100755 config/tasks/processors/report_processors/daily_report_processor.py
+ delete mode 100755 config/tasks/processors/report_processors/monthly_report_processor.py
+ delete mode 100755 config/tasks/processors/report_processors/weekly_report_processor.py
+ delete mode 100755 config/tasks/processors/report_processors/yearly_report_processor.py
+ delete mode 100755 config/tasks/processors/review_processor.py
+ delete mode 100755 config/tasks/processors/send_to_slack.py
+ delete mode 100755 config/tasks/processors/transcript_processor.py
+ delete mode 100755 config/tasks/processors/upload_processor.py
+Pushing changes to GitHub...
+To https://github.com/eastern-brown/maria.git
+   05474bc..bcb2bf9  master -> master
+Changes committed and pushed successfully
+=== GitHub backup completed at Wed Dec 18 13:19:55 UTC 2024 ===
+----------------------------------------
