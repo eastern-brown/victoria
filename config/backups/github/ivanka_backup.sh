@@ -3,7 +3,7 @@
 
 # Configuration
 BOT_DIR="/home/ernsttulle/ivanka"
-LOG_FILE="$BOT_DIR/backups/github/github_backup_log.txt"
+LOG_FILE="$BOT_DIR/config/backups/github/github_backup_log.txt"
 DATE=$(date '+%Y-%m-%d_%H-%M-%S')
 
 # Ensure we're in the right directory
