@@ -1,8 +1,8 @@
-# /home/ernsttulle/ivanka/config/backups/github/ivanka_backup.sh
 #!/bin/bash
+# /home/ernsttulle/agatha/config/backups/github/agatha_backup.sh
 
 # Configuration
-BOT_DIR="/home/ernsttulle/ivanka"
+BOT_DIR="/home/ernsttulle/agatha"
 LOG_FILE="$BOT_DIR/config/backups/github/github_backup_log.txt"
 DATE=$(date '+%Y-%m-%d_%H-%M-%S')
 
